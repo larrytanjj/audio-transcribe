@@ -1,6 +1,5 @@
-# Audio Transcription API
-
-This is a FastAPI-based service for transcribing audio files using the Whisper model from OpenAI.
+# Audio Transcriber
+This is a web application for transcribing audio files using the Whisper model from OpenAI.
 
 ## Features
 
@@ -28,8 +27,8 @@ This is a FastAPI-based service for transcribing audio files using the Whisper m
 
 This will:
 - Create necessary directories
-- Build the Docker image
-- Start the FastAPI application
+- Build the Docker image for both backend and frontend
+- Start the FastAPI application and React Web application
 
 ## API Endpoints
 
@@ -60,12 +59,10 @@ If you prefer to run the commands manually:
 
 ## Project Structure
 
-- `main.py` - FastAPI application code
-- `Dockerfile` - Docker configuration
+- `backend` - FastAPI application code
+- `frontend` - ReactJS application code
 - `docker-compose.yml` - Docker Compose configuration
-- `requirements.txt` - Python dependencies
-- `uploads/` - Directory for audio file storage
-- `transcriptions.db` - SQLite database for transcriptions
+- `setup.sh` - Setup script
 
 ## API Documentation
 
