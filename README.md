@@ -142,45 +142,10 @@ This document explains how to set up a virtual environment and run the unit test
    cd /backend
    ```
 
-2. Create a virtual environment:
+2. Run the setup script:
    ```
-   python -m venv venv
+   ./setup.sh
    ```
-
-3. Activate the virtual environment:
-   - **Windows**:
-     ```
-     venv\Scripts\activate
-     ```
-   - **macOS/Linux**:
-     ```
-     source venv/bin/activate
-     ```
-
-## Installing Dependencies
-
-Once your virtual environment is activated, install the required packages:
-
-```
-pip install pytest
-pip install -r requirements.txt
-```
-
-## Running the Tests
-
-To run all unit tests:
-
-```
-pytest tests/test_main.py
-```
-
-## Deactivating the Virtual Environment
-
-When you're finished, you can deactivate the virtual environment:
-
-```
-deactivate
-```
 
 ## API Endpoints
 
