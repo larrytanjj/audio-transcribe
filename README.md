@@ -201,6 +201,7 @@ If you prefer to run the commands manually:
 - `backend` - FastAPI application code
 - `frontend` - ReactJS application code
 - `docker-compose.yml` - Docker Compose configuration
+- `architecture.pdf` - Architecture diagram
 - `setup.sh` - Setup script
 
 ## API Documentation
