@@ -124,7 +124,7 @@ This will:
 - Create necessary directories
 - Build the Docker image for both backend and frontend
 - Start the FastAPI application and React Web application
-- Go to http://localhost:5173 open the web application
+- Go to http://localhost:5173 to view the web application
 
 ## API Endpoints
 
