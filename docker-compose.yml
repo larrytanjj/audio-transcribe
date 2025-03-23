@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: 
+      context: ./backend  # Assuming your API code is in a backend folder
+      dockerfile: Dockerfile
+    container_name: audio-transcribe-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/uploads:/app/uploads
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend  # Assuming your frontend code is in a frontend folder
+      dockerfile: Dockerfile
+    container_name: audio-transcribe-frontend  # Added container name
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/src:/app/src
+    restart: unless-stopped
