@@ -13,18 +13,6 @@ This is a web application for transcribing audio files using the Whisper model f
 - Docker
 - Docker Compose
 
-## Setup and Running
-
-1. Clone this repository
-2. Make the setup script executable:
-   ```bash
-   chmod +x setup.sh
-   ```
-3. Run the setup script:
-   ```bash
-   ./setup.sh
-   ```
-
 # Running the Setup Script
 
 This document provides instructions for running the `setup.sh` script across different operating systems.
@@ -136,6 +124,7 @@ This will:
 - Create necessary directories
 - Build the Docker image for both backend and frontend
 - Start the FastAPI application and React Web application
+- Go to http://localhost:5173 open the web application
 
 ## API Endpoints
 
