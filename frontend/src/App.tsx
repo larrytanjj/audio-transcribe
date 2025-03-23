@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './App.css'
 import { Alert, Button, ConfigProvider, Spin, Table, TableProps, theme } from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
@@ -25,6 +25,8 @@ function App() {
 
   const { Dragger } = Upload;
   const { Search } = Input;
+
+  const onlineRef = useRef(false);
 
   const props: UploadProps = {
     name: 'audio_file',
@@ -116,8 +118,11 @@ function App() {
     axios.request(config)
       .then((response) => {
         if (response.data.status === "healthy") {
+          console.log(online);
+          if (!onlineRef.current) {
+            getTranscription();
+          }
           setOnline(true);
-          getTranscription();
         }
       })
       .catch(() => {
@@ -168,6 +173,10 @@ function App() {
     startHealthCheck();
   }, [])
 
+  useEffect(() => {
+    onlineRef.current = online;
+  }, [online]);
+
   return (
     <>
       <ConfigProvider
@@ -182,7 +191,7 @@ function App() {
             <p className="ant-upload-drag-icon">
               <InboxOutlined />
             </p>
-            <p className="ant-upload-text">Click or drag audio file to this area to upload</p>
+            <p className="ant-upload-text">Click here<br />OR<br />Drag audio file(s) to this area to upload</p>
             <p className="ant-upload-hint">
               Support for a single or bulk audio file upload.
             </p>
