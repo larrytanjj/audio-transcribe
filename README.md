@@ -11,6 +11,8 @@ This is a web application for transcribing audio files using the Whisper model f
 ## Prerequisites
 
 - Python
+- pip
+- Yarn
 - Docker
 - Docker Compose
 
