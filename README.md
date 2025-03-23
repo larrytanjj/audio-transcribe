@@ -142,9 +142,9 @@ This document explains how to set up a virtual environment and run the unit test
    cd /backend
    ```
 
-2. Run the setup script:
+2. Run the test script:
    ```
-   ./setup.sh
+   ./test.sh
    ```
 
 ## API Endpoints
