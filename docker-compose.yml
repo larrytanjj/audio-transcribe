@@ -3,7 +3,7 @@ services:
     build: 
       context: ./backend  # Assuming your API code is in a backend folder
       dockerfile: Dockerfile
-    container_name: audio-transcribe-api
+    container_name: audio-transcribe-backend
     ports:
       - "8000:8000"
     volumes:
