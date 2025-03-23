@@ -126,6 +126,10 @@ This will:
 - Start the FastAPI application and React Web application
 - Go to http://localhost:5173 to view the web application
 
+## Web Application Example
+
+![Alt text](demo.png)
+
 ## API Endpoints
 
 - `GET /health` - Check API health
