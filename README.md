@@ -147,6 +147,38 @@ This document explains how to set up a virtual environment and run the unit test
    ./test.sh
    ```
 
+# Frontend Unit Tests
+
+This guide explains how to run the test suite for the Audio Transcribe.
+
+## Instructions
+
+1. Navigate to the project directory:
+
+```bash
+cd audio-transcribe/frontend
+```
+
+2. Install dependencies:
+
+```bash
+yarn install
+```
+
+3. Run the tests:
+
+```bash
+yarn test
+```
+
+## Test Cases
+
+The test suite includes three main test cases:
+
+1. **Basic UI Rendering**: Verifies that all UI components render correctly when the service is online.
+2. **Offline State Handling**: Ensures the application displays an offline message when the API is unavailable.
+3. **Transcription Data Display**: Checks that the application correctly processes and displays transcription data from the API.
+
 ## API Endpoints
 
 - `GET /health` - Check API health
